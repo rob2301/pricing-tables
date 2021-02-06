@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+/* ____ Price tables ____ */
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "price-1 price-2 price-3";
+  grid-gap: 20px;
+}
+
+.price-1 { grid-area: price-1; }
+.price-2 { grid-area: price-2; }
+.price-3 { grid-area: price-3; }
+
+/* ____ Price containers ____ */
+
+.price-1, .price-2, .price-3 {
+  background-color: lightgray;
+  display: grid;
+  border-radius: 15px;
+  grid-template-rows: 50px 50px 50px 50px auto;
+  align-items: baseline; 
+}
+
+ul {
+  list-style: none;
+}
+
+.feature-list {
+  align-content: start;
+}
+
+.package-name, .price, .info, .subscribe-button {
+  padding: 20px;
+  justify-self: center;
+  width: calc(100% - 40px);
+  text-align: center;
+}
+
+.price {
+  background-color: red;
+  color: white;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: solid 1px white;
+  border-radius: 100px;
+  font-weight: bold;
+  padding: 5px 32px;
+  cursor: pointer;
+}
+
+
+
